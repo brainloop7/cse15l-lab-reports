@@ -11,4 +11,4 @@ If you don't already have it, install it here:
 [Link] (https://code.visualstudio.com/download)
 
 Open up the text editor, you should see something like this:
-![Image] ("C:\Users\BWLiu\Videos\Captures\Get Started - week1Discussion - Visual Studio Code 1_12_2023 4_23_48 PM.png")
+![Image] (Get Started - week1Discussion - Visual Studio Code 1_12_2023 4_23_48 PM.png)
