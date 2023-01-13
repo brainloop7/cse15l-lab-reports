@@ -38,4 +38,9 @@ Your screen should look something like this:
 
 **Step 3**
 
+Make sure everything works! Try out some terminal commands and explore the directories.
+
+Like this:
+
+![Image](practiceCommands.png)
 
