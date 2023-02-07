@@ -5,7 +5,26 @@
 
 Here's my code for the StringServer class:
 
-![Image](Screenshot_20230127_103412.png)
+```
+class Handler implements URLHandler {
+    // current string
+    String currString = "";
+    public String handleRequest(URI url) {
+        if (url.getPath().contains("/add-message")) { 
+            String[] parameters = url.getQuery().split("=");
+            if (parameters[0].equals("s")) {
+                if (currString.length() == 0) {
+                    currString = currString.concat(parameters[1]);  
+                } else {
+                    currString = currString.concat("\n" + parameters[1]);  
+
+                }
+            }
+        }
+        return currString;
+    }
+}
+``` 
 
 Here's what my screen looks like after loading up the server:
 
@@ -59,16 +78,33 @@ Here's the symptoms of each test:
 
 As you can see, testReversed1() failed, while testReversed() passed.
 
-Now, let's get to fixing the reversed() method. Here's the code for the method before fixing. See if you can spot the bug!
+Why's this? The problem is that arr itself is being updated and returned, rather than a new array as the method should. We can fix this by changing the 
+reference to arr[i] and arr in the return statement to newArray, and by changing newArray[arr.length - i - 1] to arr[arr.length - i - 1]. This should
+solve our bug because this way, a new array is created with the update values and returned, as the method is supposed to do. 
 
-![Image](Screenshot_20230127_113933.png)
+Now, let's get to fixing the reversed() method. Here's the code for the method before fixing.
+
+```
+static int[] reversed(int[] arr) {
+  int[] newArray = new int[arr.length];
+  for (int i = 0; i < arr.length; i += 1) {
+    arr[i] = newArray[arr.length - i - 1];
+  }
+  return arr;
+}
+```
 
 And here's the code after fixing the bug. Is this what you thought too?
 
-![Image](Screenshot_20230127_114325.png)
-
-As you can see, the bug was that arr itself was being updated and returned, rather than a new array as the method expected. I fixed this by changing some references 
-to arr to references to newArray, and making the method return newArray. 
+```
+static int[] reversed(int[] arr) {
+  int[] newArray = new int[arr.length];
+  for (int i = 0; i < arr.length; i += 1) {
+    newArray[i] = arr[arr.length - i - 1];
+  }
+  return newArray;
+}
+```
 
 **Part 3**
 
