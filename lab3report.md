@@ -173,6 +173,9 @@ The widespread belief, originating with Freud, that play is pleasurable wish ful
 Even when make-believe does fulﬁll a child’s wishes, such pleasure is not unique to play. Many other activities, such as eating a favorite treat, being granted the undivided attention and affection of a parent, and listening to an exciting story, are at least as gratifying and sometimes more so than pretending. Indeed, imaginative wish fulﬁllment can, at times, be counterproductive. In well-known research on children’s ability to delay gratiﬁcation, psychologist Walter Mischel and his collaborators showed preschoolers some delicious marshmallows and told them that they could have one now or several if they waited until later. Children who spent the waiting period in a wish-fulﬁllment mode, thinking about what it would be like to eat those tasty marshmallows, were far less likely to wait patiently and successfully than children who turned their attention away from the treats and thought about other things.7 In this situation and others, being caught up in fantasized wish fulﬁllment interferes with attaining larger, more rewarding outcomes in real life—ones that would have been realized had the child been able to exercise imaginative self-restraint.
 ```
 
+This could be very useful if you're looking for more context surrounding a word or phrase once you find it. For example, if you're searching for a word and are
+interested in how the author develops their text afterwards, you could use -A n to expand what grep displays. 
+
 **Summary**
 
 Hopefully, you now understand the grep function and some of its important alternatives! Personally, just by researching and writing this lab report, I learned a lot
