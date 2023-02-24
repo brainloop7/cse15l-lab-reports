@@ -19,7 +19,7 @@ Since I've already done these tasks before, I need to delete the repository from
 measure my speed and not run into problems while going through the tasks.
 
 Using the following commands, I entered my remote server and then removed lab7 and its contents from my remote server.
-I also used the ls command to double-check whether lab7 has been removed.
+I also used the ```ls``` command to double-check whether lab7 has been removed.
 
 ```
 $ ssh cs15lwi23avx@ieng6.ucsd.edu
