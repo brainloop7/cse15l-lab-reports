@@ -33,7 +33,7 @@ $ ls
 Make sure to exit the remote server now!
 
 ```
-exit
+$ exit
 ```
 
 Next, to fully remove lab7 from my accounts, I went to GitHub on my browser and deleted my fork of the lab7 repository. 
@@ -78,7 +78,7 @@ Next, I cloned my fork of the lab7 repository into my remote server.
 I didn't use any shortcuts for this step. I simply typed in the following command:
 
 ``` 
-git clone git@github.com:brainloop7/lab7.git
+$ git clone git@github.com:brainloop7/lab7.git
 ```
 
 This command cloned my lab7 fork from my personal GitHub into my remote server.
@@ -90,7 +90,7 @@ This command cloned my lab7 fork from my personal GitHub into my remote server.
 I started by entering into the lab7 repository.
 
 ```
-cd lab7
+$ cd lab7
 ```
 
 Then, I compiled all java files within lab7. I used the following shortcuts:
@@ -122,7 +122,7 @@ In this task, I had to edit the code in ListExamples so that it would pass the t
 from the terminal, I used vim. 
 
 ```
-vim ListExamples.java
+$ vim ListExamples.java
 ```
 
 After running this command, I saw this screen:
@@ -163,9 +163,9 @@ The final step is committing and pushing these changes to my GitHub account. To 
 I didn't use any shortcuts for these.
 
 ```
-git add ListExamples.java
-git commit -m "updated ListExamples"
-git push
+$ git add ListExamples.java
+$ git commit -m "updated ListExamples"
+$ git push
 ```
 
 The first command ```git add ListExamples.java``` adds changes to ListExamples.java to the next commit. The second command
